@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope, faCopy, faCheck, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import "./Contact.css";
 import { useState } from "react";
