@@ -1,0 +1,194 @@
+@media (max-width: 768px) {
+    .contactBox{
+        background-color: gainsboro;
+    }
+    
+    .contactDetails {
+        border: none;
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        margin-top: -2%;
+        margin-bottom: 10%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .contactHeading {
+        width: 90%;
+        margin: auto;
+        margin-top: 3rem;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .contactHeading h2 {
+        font-size: 30px;
+        padding: 10%;
+    }
+
+    .phoneLabel {
+        font-size: 90%;
+    }
+
+    .emailLabel {
+        margin-left: 10%;
+        font-size: 90%;
+    }
+
+    .emailAddress {
+        margin-left: 10%;
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 769px) {
+    .contactHeading {
+        height: 100%;
+    }
+
+    .contactHeading h2 {
+        padding: 18%;
+        font-size: 70px;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .emailLabel {
+        margin-left: 6%;
+    }
+
+    .phoneNumber,
+    .emailAddress {
+        font-size: larger;
+    }
+
+    .emailAddress{
+        margin-left: 6%;
+    }
+}
+
+.contactDetails {
+    border: none;
+    background-color: white;
+}
+
+.contactHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.phoneBox,
+.emailBox {
+    display: flex;
+    align-items: center;
+    border: 2px solid #667eea;
+    background-color: whitesmoke;
+    padding: 4%;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.phoneBox {
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.emailBox {
+    margin-bottom: 5%;
+}
+
+.phoneLogo,
+.emailLogo {
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.phoneLabel {
+    margin-left: 18%;
+}
+
+.phoneNumber {
+    margin-left: 18%;
+    font-weight: bold;
+}
+
+.emailAddress {
+    font-weight: bold;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.copyPhone {
+    border-radius: 7px;
+    color: white;
+    padding: 2px 7px 2px 7px;
+    margin-left: auto;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+
+.copyEmail {
+    border-radius: 7px;
+    color: white;
+    padding: 2px 7px 2px 7px;
+    margin-left: auto;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.githubBox,
+.linkedInBox {
+    border: 1px solid grey;
+    margin: 10px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.githubBox:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 4px rgb(0, 0, 0.3);
+}
+
+.linkedInBox:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 4px rgb(0, 0, 0.3);
+}
+
+.resumeBox {
+    width: 100%;
+    text-align: center;
+}
+
+.resumeBtn {
+    border: none;
+    width: 90%;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    margin-bottom: 10%;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
+.resumeBtn:hover {
+    box-shadow: 0 2px 4px rgb(0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.noHighlight {
+    text-decoration: none;
+}

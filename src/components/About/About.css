@@ -1,0 +1,213 @@
+.aboutContainer {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.aboutHeading {
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+.roleTitle {
+  color: white;
+  font-size: 2rem;
+  font-family: Dancing Script;
+  margin-bottom: 3rem;
+}
+
+.profileIntroBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.glow-section {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.glow-circle {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 0rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow:
+    40px 0 60px #ff00cc,
+    -50px 0 60px #33a3ff;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+.profileImage {
+  width: 100%;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.26);
+}
+
+.label {
+  margin-top: -5rem;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1rem 2rem 1rem 2rem;
+  color: white;
+  text-align: center;
+  width: auto;
+}
+
+.label h2 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.label p {
+  font-size: 1rem;
+  color: #50e3c2;
+}
+
+.introBox {
+  display: flex;
+  align-items: center;
+}
+
+.introduction {
+  border: 1px solid rgba(255, 255, 255, 0.363);
+  padding: 2rem;
+  border-radius: 20px;
+  font-size: larger;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+
+.skillRow {
+  margin-top: 5rem;
+}
+
+.skillBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.192);
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.skillLogoBox {
+  padding: 1.1rem;
+  border-radius: 15px;
+}
+
+.skillLogo {
+  width: 100%;
+  color: white;
+}
+
+.skillHeading {
+  color: white;
+}
+
+.skillDescription {
+  color: white;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow:
+      30px 0 60px #ff00cc,
+      -40px 0 60px #33a3ff;
+  }
+
+  50% {
+    box-shadow:
+      60px 0 60px #ff00cc,
+      -70px 0 60px #33a3ff;
+  }
+
+  100% {
+    box-shadow:
+      30px 0 60px #ff00cc,
+      -40px 0 60px #33a3ff;
+  }
+}
+
+@media (min-width: 300px) {
+  .aboutHeading {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .roleTitle {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .glow-section {
+    margin-bottom: 3rem;
+  }
+
+  .glow-circle {
+    width: 90%;
+  }
+
+  .introduction {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .glow-circle {
+    width: 70%;
+  }
+
+  .skillBox {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .glow-circle {
+    width: 70%;
+  }
+
+  .introduction {
+    font-size: medium;
+  }
+
+  .skillBox {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .aboutHeading {
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .roleTitle {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .glow-circle {
+    width: 60%;
+  }
+
+  .introduction {
+    font-size: larger;
+  }
+
+}

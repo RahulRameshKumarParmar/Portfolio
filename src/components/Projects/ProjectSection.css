@@ -1,0 +1,319 @@
+.projectBox {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  padding-top: 5rem;
+}
+
+.projectRow{
+  padding-bottom: 7rem;
+}
+
+.projectCol {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+  border: 1px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgb(0, 0, 0.3);
+}
+
+.projectHeadingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectHeading {
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+  margin: 0;
+  text-overflow: hidden;
+}
+
+.projectReflection {
+  font-weight: 900;
+  color: white;
+  opacity: 0.5;
+  mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.projectThumbnail {
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0.3);
+  border-bottom: 2px solid black;
+}
+
+.projectDetails {
+  background-color: white;
+  height: 100%;
+}
+
+.projectTitle {
+  display: flex;
+  align-items: center;
+  padding-left: 0.7rem;
+}
+
+.projectSequence {
+  font-size: clamp(30px, 5vw, 48px);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projectName {
+  font-size: clamp(20px, 5vw, 30px);
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.856);
+}
+
+.projectTechnologyBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.projectTechnology {
+  color: white;
+  padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: auto;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 20px;
+}
+
+.projectDescriptionBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.projectDescription {
+  width: 90%;
+  margin-left: 1.3rem;
+  color: rgba(0, 0, 0, 0.856);
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.clamped {
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+}
+
+.expanded {
+  line-clamp: unset;
+  -webkit-line-clamp: unset;
+  display: block;
+}
+
+.readMore {
+  cursor: pointer;
+  text-align: end;
+  margin-right: 2rem;
+}
+
+.linkBox {
+  margin-top: 1.5rem;
+  margin-left: 1.2rem;
+}
+
+.viewProjectLink,
+.viewCodeLink {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 10px;
+  margin-right: 5%;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.viewProjectLink:hover,
+.viewCodeLink:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 4px rgb(0, 0, 0.1);
+}
+
+@media (max-width: 576px) {
+
+  .projectBox{
+    padding-top: 2.5rem;
+  }
+  .projectCard {
+    margin-top: 5rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 32rem;
+  }
+
+  .projectHeading {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .projectReflection {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    margin-top: -20%;
+    margin-left: -2%;
+  }
+
+  .projectThumbnail {
+    overflow: hidden;
+  }
+
+  .projectSequence {
+    margin: 0.7rem;
+    width: fit-content;
+  }
+
+  .projectName {
+    margin: 0.7rem;
+    font-size: 1.5rem;
+    width: fit-content;
+  }
+
+  .projectTechnology {
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    font-size: small;
+  }
+
+  .projectDescription {
+    font-size: 0.9rem;
+    margin-bottom: auto;
+  }
+
+  .readMore {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+
+  .linkBox {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 577px) {
+
+  .projectBox{
+    padding-top: 3rem;
+  }
+  .projectCard {
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projectHeading {
+    font-size: 6rem;
+    letter-spacing: 8px;
+  }
+
+  .projectReflection {
+    font-size: 6rem;
+    letter-spacing: 8px;
+    margin-top: -12%;
+    margin-left: -2%;
+  }
+
+  .projectThumbnail {
+    height: 250px;
+  }
+
+  .projectSequence {
+    margin-left: 0.6rem;
+    margin-top: 0;
+  }
+
+  .projectTechnology {
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    font-size: medium;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .projectBox{
+    padding-top: 3rem;
+  }
+  .projectCard {
+    width: auto;
+  }
+
+  .projectThumbnail {
+    height: 180px;
+    /* overflow: hidden; */
+  }
+
+  .projectTechnology {
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    font-size: medium;
+  }
+
+  .linkBox {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .projectCard {
+    margin-top: 10rem;
+  }
+
+  .projectHeading {
+    font-size: 7rem;
+    letter-spacing: 10px;
+  }
+
+  .projectReflection {
+    font-size: 7rem;
+    letter-spacing: 10px;
+    margin-top: -10%;
+    margin-left: -1%;
+  }
+
+  .projectSequence {
+    margin-left: 0.6rem;
+    margin-top: 0;
+  }
+
+  .projectTechnology {
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    font-size: medium;
+  }
+
+  .linkBox {
+    margin-top: 1.6rem;
+  }
+}
