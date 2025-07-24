@@ -12,7 +12,6 @@ export default function NavbarSection() {
                         <Nav.Link href="#about">About</Nav.Link>
                         <Nav.Link href="#projects">Projects</Nav.Link>
                         <Nav.Link href="#contact">Contact</Nav.Link>
-                        {/* Add more links as you add more sections */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
