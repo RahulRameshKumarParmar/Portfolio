@@ -5,9 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Project1 from './components/Projects/Project1';
-import Project2 from './components/Projects/Project2';
-import Project3 from './components/Projects/Project3';
 import NotFound from './components/Not Found/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,21 +14,6 @@ const redirect = createBrowserRouter(
     {
       path: "/",
       element: <App />
-    },
-
-    {
-      path: "/project1",
-      element: <Project1 />
-    },
-
-    {
-      path: "/project2",
-      element: <Project2 />
-    },
-
-    {
-      path: "/project3",
-      element: <Project3 />
     },
 
     {
