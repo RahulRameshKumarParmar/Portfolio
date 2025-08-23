@@ -4,7 +4,7 @@
   padding-top: 5rem;
 }
 
-.projectRow{
+.projectRow {
   padding-bottom: 7rem;
 }
 
@@ -18,7 +18,7 @@
 .projectCard {
   display: flex;
   flex-direction: column;
-  height: 35rem;
+  height: 38rem;
   border: 1px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -52,6 +52,10 @@
   color: white;
   opacity: 0.5;
   mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.projectThumbnailBox {
+  height: auto;
 }
 
 .projectThumbnail {
@@ -96,7 +100,6 @@
   flex-wrap: wrap;
   align-items: center;
   margin-left: 0.5rem;
-  margin-top: 0.5rem;
 }
 
 .projectTechnology {
@@ -104,7 +107,6 @@
   padding: 0.5rem 0.9rem 0.5rem 0.9rem;
   margin-left: 0.5rem;
   margin-bottom: 0.5rem;
-  margin-top: auto;
   background: linear-gradient(135deg, #667eea, #764ba2);
   border-radius: 20px;
 }
@@ -145,6 +147,7 @@
 .linkBox {
   margin-bottom: 2rem;
   margin-left: 1.2rem;
+  flex-shrink: 0;
 }
 
 .viewProjectLink,
@@ -168,9 +171,10 @@
 
 @media (max-width: 576px) {
 
-  .projectBox{
+  .projectBox {
     padding-top: 2.5rem;
   }
+
   .projectCard {
     margin-top: 5rem;
     width: 85%;
@@ -219,18 +223,16 @@
   .readMore {
     font-size: 0.9rem;
     margin-left: 1rem;
-  }
-
-  .linkBox {
-    margin-top: 4rem;
+    margin-bottom: 1rem;
   }
 }
 
 @media (min-width: 577px) {
 
-  .projectBox{
+  .projectBox {
     padding-top: 3rem;
   }
+
   .projectCard {
     margin-top: 5rem;
     width: 80%;
@@ -267,15 +269,16 @@
 
 @media (min-width: 768px) {
 
-  .projectBox{
+  .projectBox {
     padding-top: 3rem;
   }
+
   .projectCard {
     width: auto;
   }
 
   .projectThumbnail {
-    height: 180px;
+    height: 35vh;
   }
 
   .projectTechnology {
@@ -308,6 +311,10 @@
   .projectSequence {
     margin-left: 0.6rem;
     margin-top: 0;
+  }
+
+  .projectThumbnail{
+    height: 40vh;
   }
 
   .projectTechnology {
