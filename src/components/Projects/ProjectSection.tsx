@@ -40,13 +40,13 @@ export default function ProjectSection() {
 
         {
             sequence: "03",
-            title: "Mini Ecommerce",
-            imgSrc: "./Mini-Ecommerce/Screenshot (304).png",
-            imgAlt: "Mini Ecommerce Thumbnail",
-            technology: ["React JS", "Bootstrap", "CSS", "HTML"],
-            description: "A small ecommerce website where different categories of products are available through an API, and users can select the category they want to purchase from.",
-            projectLink: "https://shopfirstecommerce.netlify.app/",
-            codeLink: "https://github.com/RahulRameshKumarParmar/Mini-Ecommerce"
+            title: "String Generator",
+            imgSrc: "./Random String Generator/Screenshot (684).png",
+            imgAlt: "Random String Generator Thumbnail",
+            technology: ["React JS", "Typescript", "Tailwind", "HTML"],
+            description: "A Random String Generator app can select string length and choose character types. It provides an option to save generated strings allowing users to view their string history even after page reloads.",
+            projectLink: "https://stringmaker.netlify.app/",
+            codeLink: "https://github.com/RahulRameshKumarParmar/Random-String-Generator"
         }
     ]
 
@@ -70,7 +70,7 @@ export default function ProjectSection() {
                             <Col xs={12} md={6} lg={4} className='projectCol' key={value}>
                                 <div className='projectCard'>
                                     <div className='projectThumbnailBox'>
-                                        <img className='projectThumbnail' src={data.imgSrc} alt={data.imgAlt} />
+                                        <img lazy-loading className='projectThumbnail' src={data.imgSrc} alt={data.imgAlt} />
                                     </div>
                                     <div className='projectDetails'>
                                         <div className='projectTitle'>

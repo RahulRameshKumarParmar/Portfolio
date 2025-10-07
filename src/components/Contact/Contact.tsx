@@ -7,9 +7,12 @@ import { useState } from "react";
 
 export default function Contact() {
   const number = "8200385875";
-  const gmail = "rahulparmar1339950@gmail.com";
+  const gmail:string = "rahulparmar1339950@gmail.com";
+  const firstResume:string = "Rahul_Parmar_Resume.pdf";
+  const secondResume:string = "Rahul-Parmar-Resume.pdf";
 
   const [copied, setCopied] = useState<string>("");
+  const [resume, setResume] = useState<boolean>(false);
 
   const Copy = (text:string): void => {
     navigator.clipboard.writeText(text);
@@ -59,8 +62,8 @@ export default function Contact() {
               </a>
             </div>
             <div className="resumeBox">
-              <a href="Rahul_Parmar_Resume.pdf" download>
-                <button className="resumeBtn">
+              <a href={resume ? firstResume : secondResume} download>
+                <button onClick={() => setResume(!resume)} className="resumeBtn">
                   <FontAwesomeIcon className="pe-2" icon={faFile} />Download Resume
                 </button>
               </a>
