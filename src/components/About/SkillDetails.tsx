@@ -1,10 +1,9 @@
 import { FaReact, FaJs, FaGithub, FaPalette } from 'react-icons/fa';
 import { SiBootstrap } from 'react-icons/si';
-import { JSX } from 'react';
 
 export interface Skill {
     id: Number;
-    img: JSX.Element;
+    img: React.ReactNode;
     alt: string;
     skillName: string;
     description: string;
