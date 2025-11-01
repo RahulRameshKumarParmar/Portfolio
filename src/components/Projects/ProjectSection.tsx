@@ -70,7 +70,7 @@ export default function ProjectSection() {
                             <Col xs={12} md={6} lg={4} className='projectCol' key={value}>
                                 <div className='projectCard'>
                                     <div className='projectThumbnailBox'>
-                                        <img lazy-loading className='projectThumbnail' src={data.imgSrc} alt={data.imgAlt} />
+                                        <img loading='lazy' className='projectThumbnail' src={data.imgSrc} alt={data.imgAlt} />
                                     </div>
                                     <div className='projectDetails'>
                                         <div className='projectTitle'>
